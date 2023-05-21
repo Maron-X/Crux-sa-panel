@@ -86,4 +86,8 @@ export default {
 
 <style lang="scss" scoped>
 @import 'assets/scss/base/core/menu/menu-types/vertical-menu.scss';
+
+html[dir=rtl] svg.feather{
+  transform: rotate(0 deg) !important;
+  }
 </style>
