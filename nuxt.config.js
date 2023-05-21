@@ -143,10 +143,10 @@ export default {
       }
     },
     redirect: {
-      login: '/',
+      login: '/panel',
       logout: '/login',
       callback: '/login',
-      home: '/'
+      home: '/panel'
     }
   },
 
@@ -164,7 +164,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   publicRuntimeConfig: {
-    // SITE_TITLE: 'Nuxtstrap',
+    SITE_TITLE: 'Crux-sa'
     // NODE_URL_images: 'http://127.0.0.1:5678/images/'
   }
 }

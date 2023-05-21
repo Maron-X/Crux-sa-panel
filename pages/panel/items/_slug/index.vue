@@ -17,7 +17,7 @@
           <FormFInputIcon
             :label="$t('description')"
             :module-name="moduleName"
-            icon="user"
+            icon="edit-2"
             store-key="description"
           />
 
@@ -26,13 +26,14 @@
             :module-name="moduleName"
             preview="items"
             store-key="image"
+            icon="image"
             lg="12"
           />
 
           <FormFInputIcon
             :label="$t('cal')"
             :module-name="moduleName"
-            icon="user"
+            icon="layers"
             type="number"
             store-key="cal"
           />
@@ -40,7 +41,7 @@
           <FormFInputIcon
             :label="$t('sar')"
             :module-name="moduleName"
-            icon="user"
+            icon="dollar-sign"
             type="number"
             store-key="sar"
           />
@@ -49,7 +50,7 @@
             :label="$t('categories')"
             label-select="title"
             :module-name="moduleName"
-            icon="list"
+            icon="grid"
             global
             list-key="categories"
             store-key="category"

@@ -25,6 +25,7 @@
             :label="$t('image')"
             :module-name="moduleName"
             preview="categories"
+            icon="image"
             store-key="image"
           />
         </template>

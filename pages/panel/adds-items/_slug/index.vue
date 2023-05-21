@@ -17,7 +17,7 @@
           <FormFInputIcon
             :label="$t('price')"
             :module-name="moduleName"
-            icon="user"
+            icon="dollar-sign"
             type="number"
             store-key="price"
           />
@@ -25,7 +25,7 @@
             :label="$t('categories')"
             label-select="title"
             :module-name="moduleName"
-            icon="list"
+            icon="grid"
             global
             list-key="categories"
             store-key="category_id"

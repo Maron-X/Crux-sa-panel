@@ -31,22 +31,22 @@
         /> -->
         <ExtendedBSLink
           :title="$t(`categories`)"
-          icon="user"
+          icon="grid"
           route="/panel/categories"
         />
         <ExtendedBSLink
           :title="$t(`items`)"
-          icon="user"
+          icon="box"
           route="/panel/items"
         />
         <ExtendedBSLink
           :title="$t(`adds-items`)"
-          icon="user"
+          icon="plus"
           route="/panel/adds-items"
         />
         <ExtendedBSLink
           :title="$t(`settings`)"
-          icon="user"
+          icon="settings"
           route="/panel/settings"
         />
       </ul>

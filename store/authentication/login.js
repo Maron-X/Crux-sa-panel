@@ -1,7 +1,7 @@
 export const state = () => ({
   fields: {
-    email: 'abdelmomenelshatory@gmail.com',
-    password: 'password'
+    email: '',
+    password: ''
   }
 })
 

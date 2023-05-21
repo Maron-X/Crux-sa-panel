@@ -6,7 +6,7 @@
     :msg="$t('login.please')"
     :btn="$t('buttons.login')"
     :module-name="moduleName"
-    :forgot="true"
+    :forgot="false"
   >
     <template #inputs>
       <FormFInputIcon
@@ -28,12 +28,12 @@
         md="12"
       />
     </template>
-    <template #pages>
+    <!-- <template #pages>
       <span class="fs-4">{{ $t('login.new_platform') }}</span>
       <b-link :to="localePath('/auth/register')">
         <span class="fs-4">&nbsp; {{ $t('login.new_account') }}</span>
       </b-link>
-    </template>
+    </template> -->
   </ContainersDoAuth>
 </template>
 

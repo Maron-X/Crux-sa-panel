@@ -28,3 +28,11 @@ body,
 html {
   font-family: "Tajawal", sans-serif;
 }
+
+.form-auth {
+  .form-group {
+    legend {
+      text-align: start;
+    }
+  }
+}
