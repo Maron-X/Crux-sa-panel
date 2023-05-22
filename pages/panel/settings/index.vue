@@ -15,23 +15,29 @@
             store-key="instagram"
           />
           <FormFInputIcon
+            label="الواتس اب"
+            :module-name="moduleName"
+            icon="user"
+            store-key="whatsapp"
+          />
+          <FormFInputIcon
             label="العنوان"
             :module-name="moduleName"
             icon="user"
             store-key="location"
           />
           <FormFInputIcon
-            label="تاريخ الفتح"
+            label=" ساعات العمل"
             :module-name="moduleName"
             icon="user"
             store-key="open_time"
           />
-          <FormFInputIcon
+          <!-- <FormFInputIcon
             label="الرقم السرى"
             :module-name="moduleName"
             icon="user"
             store-key="password"
-          />
+          /> -->
           <FormFInputIcon
             label="الهاتف"
             :module-name="moduleName"
@@ -43,12 +49,6 @@
             :module-name="moduleName"
             icon="user"
             store-key="username"
-          />
-          <FormFInputIcon
-            label="الواتس اب"
-            :module-name="moduleName"
-            icon="user"
-            store-key="whatsapp"
           />
         </template>
       </component>

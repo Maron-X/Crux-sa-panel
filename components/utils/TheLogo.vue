@@ -7,7 +7,7 @@
       <span class="brand-logo">
         <b-img
           :style="{ 'max-width': maxWidth + 'px' }"
-          :src="require('@/assets/images/logos/tech.png')"
+          :src="require('@/static/logo.png')"
           alt="logo"
         />
       </span>

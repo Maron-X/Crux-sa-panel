@@ -11,7 +11,7 @@
       order-sm-2 order-md-2 order-lg-3
     "
   >
-    <b-button :to="localePath(`${path}/create`)" class="ms-4" variant="primary">
+    <b-button :to="localePath(`${path}/create`)" class="ms-4" style="background-color: rgb(184, 10, 88) !important">
       <span class="text-nowrap text-capitalize fs-5">
         {{ $t('buttons.add') }} {{ title }}
       </span>

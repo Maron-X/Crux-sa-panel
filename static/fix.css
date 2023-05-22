@@ -1,0 +1,9 @@
+html[dir=rtl] svg.feather {
+    transform: rotate(0 deg) !important;
+}
+
+
+.main-menu.menu-light .navigation > li .nuxt-link-exact-active
+{
+    background-color: rgb(184, 10, 88) !important   
+}

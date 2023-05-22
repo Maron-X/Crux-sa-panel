@@ -13,7 +13,7 @@
         </div>
         <b-avatar
           size="40"
-          :src="require('@/assets/images/logos/tech.png')"
+          :src="require('@/static/logo.png')"
           variant="light-primary"
           badge
           class="badge-minimal"
