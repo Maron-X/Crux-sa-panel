@@ -7,16 +7,30 @@
       >
         <template #inputs>
           <FormFInputIcon
-            :label="$t('name')"
+            :label="$t('ar_name')"
             :module-name="moduleName"
             icon="user"
             store-key="title"
           />
           <FormFInputIcon
-            :label="$t('description')"
+            :label="$t('en_name')"
+            :module-name="moduleName"
+            icon="user"
+            store-key="title_en"
+          />
+          <FormFAreaIcon
+            :label="$t('ar_description')"
             :module-name="moduleName"
             icon="edit-2"
             store-key="description"
+            lg="6"
+          />
+          <FormFAreaIcon
+            :label="$t('en_description')"
+            :module-name="moduleName"
+            icon="edit-2"
+            store-key="en_description"
+            lg="6"
           />
 
           <FormFFile

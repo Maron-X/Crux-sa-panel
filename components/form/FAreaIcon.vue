@@ -10,12 +10,17 @@
           <UtilsTheFIcon :icon="icon" />
         </b-input-group-prepend>
 
-        <b-form-input
+        <b-form-textarea
+          name=""
+          id=""
+          cols="20"
+          rows="3"
           v-model="fieldValue"
           :placeholder="label"
           :disabled="disabled"
           :type="type"
-        />
+        ></b-form-textarea>
+
       </b-input-group>
     </b-form-group>
   </b-col>

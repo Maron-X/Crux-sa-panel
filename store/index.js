@@ -26,18 +26,18 @@ export const getters = {
 
 export const actions = {
   async nuxtServerInit({ commit }) {
-    // get All Countries
-    const res = await this.$axios.$get('https://restcountries.com/v3.1/all')
-    const countries = res.map((x, i) => ({
-      ...x,
-      display: `${x.name.common} - ${x.translations.ara.common}`,
-      phoneCode: x.idd.root && `${x.idd.root}${x.idd.suffixes[0]}`
-    }))
-    commit(
-      'global/setList',
-      { key: 'countries', value: countries },
-      { root: true }
-    )
+    // // get All Countries
+    // const res = await this.$axios.$get('https://restcountries.com/v3.1/all')
+    // const countries = res.map((x, i) => ({
+    //   ...x,
+    //   display: `${x.name.common} - ${x.translations.ara.common}`,
+    //   phoneCode: x.idd.root && `${x.idd.root}${x.idd.suffixes[0]}`
+    // }))
+    // commit(
+    //   'global/setList',
+    //   { key: 'countries', value: countries },
+    //   { root: true }
+    // )
 
     // get All Countries
     // const { data } = await this.$axios.$get('/categories')

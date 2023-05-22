@@ -9,7 +9,9 @@ export const state = () => ({
   },
   fields: {
     title: null,
+    title_en: null,
     description: null,
+    description_en: null,
     image: null,
     cal: null,
     sar: null,
