@@ -30,12 +30,30 @@ export const actions = {
     const createdAt =
       await this.$fireModule.firestore.FieldValue.serverTimestamp()
 
+    const categoriesRef =
+      await this.$fire.firestore
+        .collection('categories')
+        // .where('_id', '==', state.fields.category_id)
+        .get()
+
+    const allCategories = categoriesRef.docs.map(doc => ({ ...doc.data(), id: doc.id }))
+
+    state.fields.category_name = allCategories.filter(x => x.id === state.fields.category_id)[0].title
+
     await this.$fire.firestore
       .collection(state.apiModule)
       .add({ ...state.fields, createdAt })
   },
 
   async updateDataInDB({ state, commit }, payload) {
+    console.log(payload)
+    const categoriesRef =
+      await this.$fire.firestore
+        .collection('categories')
+        .get()
+
+    const allCategories = categoriesRef.docs.map(doc => ({ ...doc.data(), id: doc.id }))
+    state.fields.category_name = allCategories.filter(x => x.id === state.fields.category_id)[0].title
     await this.$fire.firestore
       .collection(state.apiModule)
       .doc(payload)

@@ -56,6 +56,10 @@ export default {
           label: this.$t('price')
         },
         {
+          key: 'category_name',
+          label: this.$t('category')
+        },
+        {
           key: 'actions',
           label: this.$t('actions')
         }

@@ -25,7 +25,7 @@ export const actions = {
     //   (await this.$i18n.locale) === 'en' ? 'top-right' : 'top-left'
     const welcomeMessage =
       (await this.$i18n.locale) === 'en' ? 'Welcome' : 'مرحبا بك'
-    const message = await `${welcomeMessage} ${user.displayName}`
+    const message = await `${welcomeMessage}`
 
     await this.$toast(message, {
       timeout: 3000,

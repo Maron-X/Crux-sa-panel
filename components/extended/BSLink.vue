@@ -6,10 +6,11 @@
     >
       <UtilsTheFIcon
         :icon="icon"
-        height="22.33"
+        height="38"
       />
       <span
         class="menu-title text-truncate fs-5"
+        size="lg"
         v-text="title"
       />
     </nuxt-link>

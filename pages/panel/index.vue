@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex justify-content-center">
-    <h1>Crux-sa</h1>
+    <img src="/logo-text.png" />
   </div>
 </template>
 
