@@ -73,7 +73,7 @@
         <template #cell(avatar)="data">
           <b-avatar
             class="pull-up"
-            :src="data.value"
+            :src="getHandledImageLink(data.value)"
           />
         </template>
         <template #cell(arabicName)="data">
@@ -93,7 +93,6 @@
         </template>
 
         <template #cell(actions)="data">
-          {{ data.value }}
           <span class="d-flex">
             <nuxt-link
               v-if="show"
@@ -229,6 +228,18 @@ export default {
     }
   },
   methods: {
+    getHandledImageLink(shortPath) {
+      let link = shortPath
+      if (!shortPath.includes('firebasestorage')) {
+        const noSlashShortPath = shortPath
+          .replace('/', '')
+          .replaceAll('/', '%2F')
+        link =
+          'https://evssyncwebireland1.idrive.com/evs/getThumbnail?thumbnail_type=I&p=' +
+          noSlashShortPath
+      }
+      return link
+    },
     showMsgBoxTwo(data) {
       this.$bvModal
         .msgBoxConfirm(

@@ -30,6 +30,7 @@
     "ar_description": "English Description",
     "en_description": "Arabic Description",
     "image": "image",
+    "image_path": "image path on drive",
     "price": "Price",
     "discount": "discount",
     "images": "Images",

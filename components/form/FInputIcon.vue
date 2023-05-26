@@ -11,11 +11,14 @@
         </b-input-group-prepend>
 
         <b-form-input
+          :dir="dir"
           v-model="fieldValue"
           :placeholder="label"
           :disabled="disabled"
           :type="type"
         />
+        
+        <!-- https://www.idrive.com/idrive/sync -->
       </b-input-group>
     </b-form-group>
   </b-col>
@@ -35,6 +38,9 @@ export default {
     icon: {
       type: String,
       default: 'user'
+    },
+    dir: {
+      type: String
     },
     storeKey: {
       type: String,
@@ -91,5 +97,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

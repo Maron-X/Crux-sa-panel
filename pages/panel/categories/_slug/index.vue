@@ -21,13 +21,22 @@
             store-key="title_en"
           />
 
-          <FormFFile
+          <!-- <FormFFile
             :label="$t('image')"
             :module-name="moduleName"
             preview="categories"
             icon="image"
             store-key="image"
+          /> -->
+
+          <FormFInputIcon
+            dir="ltr"
+            :label="$t('image_path')"
+            :module-name="moduleName"
+            icon="image"
+            store-key="image"
           />
+          <PreviewDriveImage :moduleName="moduleName" />
         </template>
       </ContainersDoUpdate>
     </template>
@@ -74,5 +83,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

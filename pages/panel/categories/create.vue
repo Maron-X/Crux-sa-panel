@@ -19,13 +19,23 @@
             store-key="title_en"
           />
 
-          <FormFFile
-            :label="$t('image')"
+          <FormFInputIcon
+            dir="ltr"
+            :label="$t('image_path')"
             :module-name="moduleName"
             preview="categories"
             icon="image"
             store-key="image"
           />
+          <PreviewDriveImage :moduleName="moduleName" />
+          
+          <!-- <FormFFile
+            :label="$t('image')"
+            :module-name="moduleName"
+            preview="categories"
+            icon="image"
+            store-key="image"
+          /> -->
         </template>
       </ContainersDoCreate>
     </template>
@@ -57,5 +67,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

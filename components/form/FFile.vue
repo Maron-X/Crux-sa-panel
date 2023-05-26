@@ -6,6 +6,7 @@
     class="mt-2"
   >
     <b-form-group :label="label">
+      <!-- {{ previewUrl }} -->
       <b-input-group class="position-relative">
         <b-input-group-prepend is-text>
           <UtilsTheFIcon :icon="icon" />
@@ -28,11 +29,27 @@
           <b-avatar
             v-else
             class="pull-up cursor-pointer ml-2"
-            :src="previewImg"
+            :src="handlePreviewUrl(previewImg)"
           />
+          
         </div>
       </b-input-group>
     </b-form-group>
+
+    <b-row>
+      <p
+        class="w-100"
+        style="text-transform: lowercase"
+        dir="ltr"
+      >
+        <span>
+          <b>
+            {{ previewImg }}
+          </b>
+        </span>
+        مسار الصورة على الدرايف:
+      </p>
+    </b-row>
   </b-col>
 </template>
 
@@ -114,6 +131,18 @@ export default {
     }
   },
   methods: {
+    handlePreviewUrl(shortPath) {
+      let link = shortPath
+      if (!shortPath.includes('firebasestorage')) {
+        const noSlashShortPath = shortPath
+          .replace('/', '')
+          .replaceAll('/', '%2F')
+        link =
+          'https://evssyncwebireland1.idrive.com/evs/getThumbnail?thumbnail_type=I&p=' +
+          noSlashShortPath
+      }
+      return link
+    },
     handleImgSrc(event) {
       try {
         const file = event.target.files[0]

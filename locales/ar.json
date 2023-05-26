@@ -16,6 +16,7 @@
     "category": "فئة",
     "items": "الأطباق",
     "item": "منتج",
+    "image_path": "مسار الصورة على السيرفر",
     "products": "المنتجات",
     "product": "منتج",
     "adds-items": "الإضافات",

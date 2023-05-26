@@ -33,14 +33,24 @@
             lg="6"
           />
 
-          <FormFFile
+          <!-- <FormFFile
             :label="$t('image')"
             :module-name="moduleName"
             preview="items"
             store-key="image"
             icon="image"
             lg="12"
-          />
+          /> -->
+
+          <!-- <FormFInputIcon
+            dir="ltr"
+            :label="$t('image_path')"
+            :module-name="moduleName"
+            preview="items"
+            store-key="image"
+            icon="image"
+            lg="12"
+          /> -->
 
           <FormFInputIcon
             :label="$t('cal')"
@@ -67,6 +77,17 @@
             list-key="categories"
             store-key="category"
           />
+
+          <FormFInputIcon
+            dir="ltr"
+            :label="$t('image_path')"
+            :module-name="moduleName"
+            preview="items"
+            store-key="image"
+            icon="image"
+            lg="6"
+          />
+          <PreviewDriveImage :moduleName="moduleName" />
         </template>
       </ContainersDoCreate>
     </template>
@@ -80,6 +101,8 @@ export default {
   layout: 'panel',
   data() {
     return {
+      imageFound: true,
+
       moduleName: 'panel/items',
       list: [
         {
@@ -98,5 +121,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

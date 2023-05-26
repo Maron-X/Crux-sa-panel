@@ -11,5 +11,18 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+.not-found-hint {
+  width: 100%;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  height: 100px;
+  color: red;
+  text-align: center;
+  margin: 20px auto;
+}
 </style>
