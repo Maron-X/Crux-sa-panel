@@ -14,7 +14,7 @@
     >
       <a
         class="not-found-hint"
-        href="https://www.idrive.com/idrive/sync"
+        href="https://imageshack.com/my/albums"
         target="_blank"
       >
         <p>لم يتم العثور على الصورة</p>
@@ -35,18 +35,17 @@ export default {
     previewImage() {
       this.imageFound = true
       let shortPath = this.$store.getters[`${this.moduleName}/fields`].image
-      console.log('shortPath: ', shortPath)
       if (!shortPath) return
 
-      let link = null
-      if (!shortPath.includes('firebasestorage')) {
-        const noSlashShortPath = shortPath
-          .replace('/', '')
-          .replaceAll('/', '%2F')
-        link =
-          'https://evssyncwebireland1.idrive.com/evs/getThumbnail?thumbnail_type=I&p=' +
-          noSlashShortPath
-      }
+      let link = shortPath
+      // if (!shortPath.includes('firebasestorage')) {
+      //   const noSlashShortPath = shortPath
+      //     .replace('/', '')
+      //     .replaceAll('/', '%2F')
+      //   link =
+      //     'https://evssyncwebireland1.idrive.com/evs/getThumbnail?thumbnail_type=I&p=' +
+      //     noSlashShortPath
+      // }
       return link
     }
   }

@@ -230,14 +230,14 @@ export default {
   methods: {
     getHandledImageLink(shortPath) {
       let link = shortPath
-      if (!shortPath.includes('firebasestorage')) {
-        const noSlashShortPath = shortPath
-          .replace('/', '')
-          .replaceAll('/', '%2F')
-        link =
-          'https://evssyncwebireland1.idrive.com/evs/getThumbnail?thumbnail_type=I&p=' +
-          noSlashShortPath
-      }
+      // if (!shortPath.includes('firebasestorage')) {
+      //   const noSlashShortPath = shortPath
+      //     .replace('/', '')
+      //     .replaceAll('/', '%2F')
+      //   link =
+      //     'https://evssyncwebireland1.idrive.com/evs/getThumbnail?thumbnail_type=I&p=' +
+      //     noSlashShortPath
+      // }
       return link
     },
     showMsgBoxTwo(data) {

@@ -71,7 +71,7 @@
 
           <FormFInputIcon
             dir="ltr"
-            :label="$t('image_path')"
+            :label="$t('image')"
             :module-name="moduleName"
             preview="items"
             store-key="image"
